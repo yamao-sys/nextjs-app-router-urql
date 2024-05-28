@@ -1,0 +1,51 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ReadingRecord {
+  """読書記録のID"""
+  id: Int!
+
+  """読んだ本のtitle"""
+  title: String!
+
+  """読んだ本の学んだこと"""
+  learnedContent: String
+
+  """読んだ本の感想"""
+  impression: String
+}
+
+type Query {
+  readingRecords: [ReadingRecord!]!
+  readingRecord(id: Int!): ReadingRecord!
+}
+
+type Mutation {
+  createReadingRecord(createReadingRecordInput: CreateReadingRecordInput!): ReadingRecord!
+  updateReadingRecord(updateReadingRecordInput: UpdateReadingRecordInput!): ReadingRecord!
+  removeReadingRecord(id: Int!): ReadingRecord!
+}
+
+input CreateReadingRecordInput {
+  """読んだ本のtitle"""
+  title: String!
+
+  """読んだ本の学んだこと"""
+  learnedContent: String
+
+  """読んだ本の感想"""
+  impression: String
+}
+
+input UpdateReadingRecordInput {
+  """読んだ本のtitle"""
+  title: String
+
+  """読んだ本の学んだこと"""
+  learnedContent: String
+
+  """読んだ本の感想"""
+  impression: String
+  id: Int!
+}
