@@ -11,6 +11,15 @@ services:
     stdin_open: true
     depends_on:
       - db
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend/src:/app
+    tty: true
+    environment:
+      - WATCHPACK_POLLING=true
+    ports:
+      - 3001:3000
   db:
     image: mysql:8.0.28
     container_name: db
