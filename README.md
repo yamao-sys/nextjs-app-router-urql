@@ -52,7 +52,7 @@ https://zenn.dev/sora_kumo/articles/661e1abc1cda67
 - GraphQLクライアントライブラリの選定
 	- Next.jsのfetch API
 	- Apollo Client
-	- urql
+	- urql(https://commerce.nearform.com/open-source/urql/docs/advanced/server-side-rendering/#nextjs)
 - キャッシュ戦略をあまり考えなくても済むものが良い
 - スキーマからAPIクライアント・型の生成を自動で行いたい
 	- graphql-code-generator
