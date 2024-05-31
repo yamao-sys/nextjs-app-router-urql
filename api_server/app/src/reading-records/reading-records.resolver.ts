@@ -17,6 +17,7 @@ export class ReadingRecordsResolver {
 
   @Query(() => [ReadingRecord], { name: 'readingRecords' })
   findAll() {
+    console.log('fdkfjadfjda');
     return this.readingRecordsService.findAll();
   }
 

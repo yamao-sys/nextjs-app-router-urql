@@ -42,6 +42,12 @@ https://zenn.dev/sora_kumo/articles/661e1abc1cda67
 
 - urql code generator
 	-	https://qiita.com/mu-suke08/items/e253d60de9aacaf95bef
+	- これだけだとNestJS側のスキーマと重複するね...
+	- RSCにおける利用
+		- https://reacthustle.com/blog/how-to-set-up-graphql-urql-client-with-next-js-13-server-components?expand_article=1
+		- https://the-guild.dev/graphql/codegen/plugins/presets/near-operation-file-preset
+	- urqlも結構キャッシュ管理大変...
+		- cache-and-networkやnetwork-onlyでバックエンドに送るように設定しても、クライアント側でキャッシュが残っていると効かず...
 
 ### SSRと非同期データ取得の煩わしさ
 - SSRは非同期データ取得に非対応(データ取得はHTML生成時に同期的なデータ取得)
