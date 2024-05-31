@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateReadingRecordInput } from './dto/create-reading-record.input';
 import { UpdateReadingRecordInput } from './dto/update-reading-record.input';
-import { PrismaService } from '../../src/prisma.service';
+import { PrismaService } from 'src/prisma.service';
 
 @Injectable()
 export class ReadingRecordsService {

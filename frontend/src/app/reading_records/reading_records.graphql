@@ -1,0 +1,8 @@
+query readingRecords {
+  readingRecords {
+    id
+    title
+    learnedContent
+    impression
+  }
+}
